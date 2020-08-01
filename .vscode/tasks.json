@@ -1,0 +1,1247 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "TPSProject Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win32",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Win64",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"IOS",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Shipping",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProject Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProject Android Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProject",
+				"Android",
+				"Test",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProjectEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"Debug",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProjectEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"DebugGame",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TPSProjectEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		},
+		{
+			"label": "TPSProjectEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"TPSProjectEditor",
+				"Win64",
+				"Development",
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Unreal\\UE_4.24"
+			}
+		}
+	]
+}

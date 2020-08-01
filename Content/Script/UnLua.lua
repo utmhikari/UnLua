@@ -80,6 +80,8 @@ local function global_index(t, k)
 	return rawget(t, k)
 end
 
+print(WITH_UE4_NAMESPACE)
+
 if WITH_UE4_NAMESPACE then
 	print("WITH_UE4_NAMESPACE==true");
 else

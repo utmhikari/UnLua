@@ -1,0 +1,13 @@
+{
+	"files.exclude": {
+		"G:/UnrealProjects/UnLua/.git": true,
+		"G:/UnrealProjects/UnLua/.vs": true,
+		"G:/UnrealProjects/UnLua/.vscode": true,
+		"G:/UnrealProjects/UnLua/Content": true,
+		"G:/UnrealProjects/UnLua/Images": true,
+		"G:/UnrealProjects/UnLua/Intermediate": true,
+		"G:/UnrealProjects/UnLua/Saved": true,
+		"G:/UnrealProjects/UnLua/Plugins/UnLua/Content": true,
+		"G:/UnrealProjects/UnLua/Plugins/UnLua/Intermediate": true
+	}
+}

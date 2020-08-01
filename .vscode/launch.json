@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "TPSProject (Debug)",
+			"request": "launch",
+			"preLaunchTask": "TPSProject Win64 Debug Build",
+			"program": "G:\\UnrealProjects\\UnLua\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProject (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "TPSProject Win64 DebugGame Build",
+			"program": "G:\\UnrealProjects\\UnLua\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProject (Development)",
+			"request": "launch",
+			"preLaunchTask": "TPSProject Win64 Development Build",
+			"program": "G:\\UnrealProjects\\UnLua\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProject (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "TPSProject Win64 Shipping Build",
+			"program": "G:\\UnrealProjects\\UnLua\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProject (Test)",
+			"request": "launch",
+			"preLaunchTask": "TPSProject Win64 Test Build",
+			"program": "G:\\UnrealProjects\\UnLua\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProjectEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "TPSProjectEditor Win64 Debug Build",
+			"program": "E:\\Unreal\\UE_4.24\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject"
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProjectEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "TPSProjectEditor Win64 DebugGame Build",
+			"program": "E:\\Unreal\\UE_4.24\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject"
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TPSProjectEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "TPSProjectEditor Win64 Development Build",
+			"program": "E:\\Unreal\\UE_4.24\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"G:\\UnrealProjects\\UnLua\\TPSProject.uproject"
+			],
+			"cwd": "E:\\Unreal\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Unreal\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "E:\\Unreal\\UE_4.24\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"G:\\UnrealProjects\\UnLua\\TPSProject.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "E:\\Unreal\\UE_4.24"
+		}
+	]
+}
