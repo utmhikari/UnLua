@@ -2,6 +2,7 @@
 
 
 #include "TPSCharacter.h"
+#include "Engine.h"
 
 // Sets default values
 ATPSCharacter::ATPSCharacter()
@@ -15,14 +16,17 @@ ATPSCharacter::ATPSCharacter()
 void ATPSCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	if (GEngine != nullptr) 
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.0, FColor::Red, TEXT("Hello World"));
+	}
 }
 
 // Called every frame
 void ATPSCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 }
 
 // Called to bind functionality to input

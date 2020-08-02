@@ -1,5 +1,6 @@
 require "UnLua"
 
+
 _G.ProjectileInitializer = ProjectileInitializer or {}
 
 function ProjectileInitializer:GetRandomColor()
@@ -10,8 +11,10 @@ function ProjectileInitializer:GetRandomColor()
 end
 
 function ProjectileInitializer:GetInitializer()
+    local color = self:GetRandomColor()
     return {
-        Color = self:GetRandomColor()
+        Color = color,
+        Ratio = (color.R + color.G + color.B) / 3,
     }
 end
 

@@ -11,6 +11,7 @@
 	],
 	"settings": {
 		"typescript.tsc.autoDetect": "off",
+		"emmylua.source.roots": ["./Plugins/UnLua/Intermediate/IntelliSense"],
 		"terminal.integrated.shell.windows": "powershell.exe",
 	},
 	"extensions": {

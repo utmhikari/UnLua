@@ -12,11 +12,13 @@ local BP_CustomProjectile_C = Class("Weapon.BP_ProjectileBase_C")
 
 function BP_CustomProjectile_C:Initialize(Initializer)
     self.BaseColor = Initializer.Color
+    self.DamageRatio = Initializer.Ratio or 0.1
 end
 
 function BP_CustomProjectile_C:UserConstructionScript()
     self.Super.UserConstructionScript(self)
-    self.Damage = 34
+    self.Damage = self.Damage * self.DamageRatio
+    print("Projectile Damage: " .. tostring(self.Damage));
     self.DamageType = UE4.UClass.Load("/Game/Core/Blueprints/BP_DamageType.BP_DamageType_C")
 end
 

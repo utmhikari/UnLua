@@ -3,7 +3,7 @@ require "UnLua"
 local BP_ProjectileBase_C = Class()
 
 function BP_ProjectileBase_C:UserConstructionScript()
-	self.Damage = 128.0
+	self.Damage = 100.0
 	self.DamageType = nil
 	self.Sphere.OnComponentHit:Add(self, BP_ProjectileBase_C.OnComponentHit_Sphere)
 end
@@ -14,11 +14,13 @@ end
 
 function BP_ProjectileBase_C:OnComponentHit_Sphere(HitComponent, OtherActor, OtherComp, NormalImpulse, Hit)
 	local Character = OtherActor:Cast(UE4.ABP_CharacterBase_C)
-	if Character then
-		Character.BoneName = Hit.BoneName;
-		local Controller = self.Instigator:GetController()
-		UE4.UGameplayStatics.ApplyDamage(Character, self.Damage, Controller, self.Instigator, self.DamageType)
+	if not Character then
+		self:K2_DestroyActor()
+		return
 	end
+	Character.BoneName = Hit.BoneName;
+	local Controller = self.Instigator:GetController()
+	UE4.UGameplayStatics.ApplyDamage(Character, self.Damage, Controller, self.Instigator, self.DamageType)
 	self:K2_DestroyActor()
 end
 
